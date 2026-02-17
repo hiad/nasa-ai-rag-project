@@ -323,7 +323,7 @@ When submitting your completed project:
 2. Test the complete workflow end-to-end
 3. Include a brief report on challenges faced and solutions found
 4. Document any additional features or improvements you added
-5. Provide sample queries and expected responses
+5. Provide sample queries and expected responses (see below)
 
 ---
 

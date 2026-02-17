@@ -10,13 +10,15 @@ import streamlit as st
 import os
 import json
 import pandas as pd
-
+from dotenv import load_dotenv
 import ragas_evaluator
 import rag_client
 import llm_client
 
 from pathlib import Path
 from typing import Dict, List, Optional
+
+load_dotenv()
 
 # RAGAS imports
 try:
@@ -72,6 +74,8 @@ def generate_response(openai_key, user_message: str, context: str,
 def evaluate_response_quality(question: str, answer: str, contexts: List[str]) -> Dict[str, float]:
     """Evaluate response quality using RAGAS metrics"""
     try:
+        print("Evaluating response quality...") 
+        print(question, answer, contexts)
         return ragas_evaluator.evaluate_response_quality(question, answer, contexts)
     except Exception as e:
         return {"error": f"Evaluation failed: {str(e)}"}
@@ -127,7 +131,7 @@ def main():
         
         if not available_backends:
             st.error("No ChromaDB backends found!")
-            st.info("Please run the embedding pipeline first:\n`python run_text_embedding.py`")
+            st.info("Please run the embedding pipeline first:\n`python3 embedding_pipeline.py`")
             st.stop()
         
         # Backend selection
@@ -158,7 +162,6 @@ def main():
         else:
             os.environ["CHROMA_OPENAI_API_KEY"] = openai_key
         
-        # Model selection
         model_choice = st.selectbox(
             "OpenAI Model",
             options=["gpt-3.5-turbo", "gpt-4", "gpt-4-turbo-preview"],
