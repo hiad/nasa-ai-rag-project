@@ -51,8 +51,8 @@ class ChromaEmbeddingPipelineTextOnly:
                  chroma_persist_directory: str = "./chroma_db",
                  collection_name: str = "nasa_space_missions_text",
                  embedding_model: str = "text-embedding-3-small",
-                 chunk_size: int = 1000,
-                 chunk_overlap: int = 200):
+                 chunk_size: int = 100,
+                 chunk_overlap: int = 50):
         """
         Initialize the embedding pipeline
         

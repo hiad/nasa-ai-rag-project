@@ -2,6 +2,7 @@ import chromadb
 from chromadb.config import Settings
 from typing import Dict, List, Optional
 from pathlib import Path
+import hashlib
 
 def discover_chroma_backends() -> Dict[str, Dict[str, str]]:
     """Discover available ChromaDB backends in the project directory"""
@@ -69,27 +70,82 @@ def initialize_rag_system(chroma_dir: str, collection_name: str):
     except Exception as e:
         return None, False, str(e)
 
-def retrieve_documents(collection, query: str, n_results: int = 3, 
-                      mission_filter: Optional[str] = None) -> Optional[Dict]:
-    """Retrieve relevant documents from ChromaDB with optional filtering"""
-
-    # TODO: Initialize filter variable to None (represents no filtering)
-    where_filter = None
-    # TODO: Check if filter parameter exists and is not set to "all" or equivalent
-    if mission_filter and mission_filter.lower() != "all":
-        # TODO: If filter conditions are met, create filter dictionary with appropriate field-value pairs
-        where_filter = {"mission": mission_filter}
-    # TODO: Execute database query with the following parameters:
-    # TODO: Pass search query in the required format
-    # TODO: Set maximum number of results to return
-    # TODO: Apply conditional filter (None for no filtering, dictionary for specific filtering)
+def search_db(collection, query: str, n_results: int = 10, where_filter: Optional[Dict] = None) -> List[Dict]:
+    """Helper function to query ChromaDB and return a flat list of results"""
     results = collection.query(
         query_texts=[query],
         n_results=n_results,
         where=where_filter
     )
-    # TODO: Return query results to caller
-    return results
+    
+    if not results or not results.get("documents"):
+        return []
+        
+    formatted_results = []
+    # results format: {"documents": [[...]], "metadatas": [[...]], "ids": [[...]], "distances": [[...]]}
+    for i in range(len(results["documents"][0])):
+        formatted_results.append({
+            "content": results["documents"][0][i],
+            "metadata": results["metadatas"][0][i],
+            "id": results["ids"][0][i],
+            "similarity": 1.0 - (results["distances"][0][i] if "distances" in results else 0)
+        })
+    return formatted_results
+
+def retrieve_and_deduplicate(collection, query: str, top_k: int = 5, where_filter: Optional[Dict] = None) -> List[Dict]:
+    """Retrieve relevant documents and remove duplicates based on content hash"""
+    # Get more results than needed to account for deduplication
+    raw_results = search_db(collection, query, n_results=top_k * 2, where_filter=where_filter)
+    
+    # Calculate similarities... results.append((review, similarity)) 
+    # (Similarity already calculated in search_db)
+    
+    # 1. Sort by similarity (highest first)
+    # ChromaDB already returns results sorted by distance (similarity)
+    # raw_results.sort(key=lambda x: x["similarity"], reverse=True)
+    
+    seen_content = set()
+    unique_snippets = []
+    
+    for snippet in raw_results:
+        # Normalize content for robust hashing
+        content_hash = hashlib.md5(snippet['content'].strip().encode('utf-8')).hexdigest()
+        if content_hash not in seen_content:
+            seen_content.add(content_hash)
+            unique_snippets.append(snippet)
+            
+        if len(unique_snippets) >= top_k:
+            break
+            
+    return unique_snippets
+
+def retrieve_documents(collection, query: str, n_results: int = 3, 
+                      mission_filter: Optional[str] = None,
+                      deduplicate: bool = True) -> Optional[Dict]:
+    """Retrieve relevant documents from ChromaDB with optional filtering and deduplication"""
+
+    where_filter = None
+    if mission_filter and mission_filter.lower() != "all":
+        where_filter = {"mission": mission_filter}
+    
+    if deduplicate:
+        snippets = retrieve_and_deduplicate(collection, query, top_k=n_results, where_filter=where_filter)
+        # Reformat back to the expected structure for compatibility
+        if not snippets:
+            return {"documents": [[]], "metadatas": [[]], "ids": [[]]}
+        
+        return {
+            "documents": [[s["content"] for s in snippets]],
+            "metadatas": [[s["metadata"] for s in snippets]],
+            "ids": [[s["id"] for s in snippets]]
+        }
+    else:
+        results = collection.query(
+            query_texts=[query],
+            n_results=n_results,
+            where=where_filter
+        )
+        return results
 
 def format_context(documents: List[str], metadatas: List[Dict]) -> str:
     """Format retrieved documents into context"""

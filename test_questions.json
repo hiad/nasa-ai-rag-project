@@ -1,0 +1,77 @@
+[
+  {
+    "mission": "Apollo 11",
+    "questions": [
+      {
+        "question": "What was the primary goal of the Apollo 11 mission according to the PAO launch commentary?",
+        "answer": "The primary goal was to land two astronauts on the Moon."
+      },
+      {
+        "question": "Who were the three astronauts assigned to the Apollo 11 mission, and who was the first to enter the spacecraft?",
+        "answer": "The astronauts were Neil Armstrong (Commander), Mike Collins (Command Module Pilot), and Buzz Aldrin (Lunar Module Pilot). Neil Armstrong was the first to enter the spacecraft at 6:54 a.m."
+      },
+      {
+        "question": "What safety measures were in place at the 320-foot level of the launch pad to assist the astronauts in case of an emergency during the countdown?",
+        "answer": "A high-speed elevator was located at the 320-foot level for emergency escape. It was controlled by Astronaut Bill Pogue (call sign 'Stoney') in the firing room."
+      },
+      {
+        "question": "What were the specific call signs assigned to the Command Module and the Lunar Module once they separated in lunar orbit?",
+        "answer": "The Command Module's call sign was 'Columbia' and the Lunar Module's call sign was 'Eagle'."
+      },
+      {
+        "question": "At what exact time did the Apollo 11 liftoff occur, and what was the status of the 'tower clearance' immediately after?",
+        "answer": "Liftoff occurred at 9:32 a.m. (32 minutes past the hour). The tower was reported as 'cleared' immediately after ignition and liftoff."
+      }
+    ]
+  },
+  {
+    "mission": "Apollo 13",
+    "questions": [
+      {
+        "question": "What was the initial objective of the Apollo 13 mission before the emergency occurred?",
+        "answer": "The initial objective was a lunar landing mission to explore the Moon's surface."
+      },
+      {
+        "question": "How did the crew handle the carbon dioxide filtration problem in the Lunar Module when the Command Module's square canisters didn't fit?",
+        "answer": "The crew built a DIY adapter using plastic bags, cardboard, and tape (often called the 'mailbox') to use the square Command Module lithium hydroxide canisters in the Lunar Module's round sockets."
+      },
+      {
+        "question": "What specific electrical bus failure and oxygen tank pressure drops were reported by the crew following the 'Houston, we've had a problem' message?",
+        "answer": "The crew reported a voltage drop on Main Bus B and a significant loss of pressure in Oxygen Tank 2, which eventually dropped to zero."
+      },
+      {
+        "question": "Which astronaut was replaced by Jack Swigert just days before the Apollo 13 launch due to exposure to German measles?",
+        "answer": "Ken Mattingly was replaced by Jack Swigert as the Command Module Pilot."
+      },
+      {
+        "question": "What was the purpose of the 'Main Bus Tie' switches used by the crew during the power-down sequence after the explosion?",
+        "answer": "The 'Main Bus Tie' switches were used to connect the entry batteries to the main electrical buses (Bus A and Bus B) to manage the limited power shared between the Command Module and Lunar Module."
+      }
+    ]
+  },
+  {
+    "mission": "Challenger (STS-51L)",
+    "questions": [
+      {
+        "question": "What was unique about mission STS-51L in terms of its crew composition and NASA's spaceflight participation program?",
+        "answer": "It featured the first private citizen to fly in NASA's spaceflight participation program, which President Reagan determined would be a school teacher, Krista McAuliffe."
+      },
+      {
+        "question": "Can you list all seven crew members of the Challenger STS-51L mission as stated in the launch transcripts?",
+        "answer": "The crew consisted of Francis 'Dick' Scobee (Commander), Michael Smith (Pilot), Judith Resnik, Ellison Onizuka, Ronald McNair, Gregory Jarvis, and Krista McAuliffe."
+      },
+      {
+        "question": "What were the recorded temperatures and wind conditions at the Kennedy Space Center on the morning of January 28, 1986?",
+        "answer": "The temperature at the pad was approximately 40-42 degrees Fahrenheit, with Northwest winds gusting up to 20 knots."
+      },
+      {
+        "question": "Why did the Challenger crew throttle down the main engines to 65% approximately 35 seconds into the flight?",
+        "answer": "The engines were throttled down to reduce stress on the orbiter while passing through 'Max Q', the region of maximum dynamic pressure and turbulence."
+      },
+      {
+        "question": "When did the management decide to postpone the launch for 24 hours during the final weather review?",
+        "answer": "The decision to postpone the launch for 24 hours was made Saturday night at 10 p.m. following a final weather review."
+      }
+    ]
+  }
+]

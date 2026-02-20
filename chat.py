@@ -53,7 +53,7 @@ def retrieve_documents(collection, query: str, n_results: int = 3,
                       mission_filter: Optional[str] = None) -> Optional[Dict]:
     """Retrieve relevant documents from ChromaDB with optional filtering"""
     try:
-        return rag_client.retrieve_documents(collection, query, n_results, mission_filter)
+        return rag_client.retrieve_documents(collection, query, n_results, mission_filter, deduplicate=True)
     except Exception as e:
         st.error(f"Error retrieving documents: {e}")
         return None
@@ -172,6 +172,14 @@ def main():
         st.subheader("🔍 Retrieval Settings")
         n_docs = st.slider("Documents to retrieve", 1, 10, 3)
         
+        # History settings
+        st.subheader("💬 History Settings")
+        max_history = st.slider(
+            "History window (messages)", 
+            0, 20, 10, 
+            help="Number of previous messages to include in context"
+        )
+        
         # Evaluation settings
         st.subheader("📊 Evaluation Settings")
         enable_evaluation = st.checkbox("Enable RAGAS Evaluation", value=RAGAS_AVAILABLE)
@@ -228,13 +236,13 @@ def main():
                     contexts_list = docs_result["documents"][0]
                     st.session_state.last_contexts = contexts_list
                 
-                # Generate response
                 response = generate_response(
                     openai_key, 
                     prompt, 
                     context, 
                     st.session_state.messages[:-1],
-                    model_choice
+                    model_choice,
+                    max_history=max_history
                 )
                 st.markdown(response)
                 
