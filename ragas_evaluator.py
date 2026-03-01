@@ -29,7 +29,18 @@ except ImportError:
     RAGAS_AVAILABLE = False
 
 def get_metrics(metrics_list: Optional[List[str]], evaluator_llm: Any, evaluator_embeddings: Any) -> List[Any]:
-    """Helper to return metric instances based on names"""
+    """Helper to return metric instances based on names. Always includes baseline metrics."""
+    baseline_metrics = ["faithfulness", "answer_relevancy"]
+    
+    # Merge user metrics with baseline
+    if metrics_list is None:
+        metrics_list = []
+    
+    # Use a set for names to avoid duplicates
+    all_metric_names = set(baseline_metrics)
+    for m in metrics_list:
+        all_metric_names.add(m.lower())
+        
     supported_metrics = {
         "faithfulness": Faithfulness(llm=evaluator_llm),
         "answer_relevancy": ResponseRelevancy(llm=evaluator_llm, embeddings=evaluator_embeddings),
@@ -40,13 +51,9 @@ def get_metrics(metrics_list: Optional[List[str]], evaluator_llm: Any, evaluator
     }
     
     selected_metrics = []
-    if not metrics_list:
-        metrics_list = ["faithfulness", "answer_relevancy"]
-        
-    for m_name in metrics_list:
-        m_name_lower = m_name.lower()
-        if m_name_lower in supported_metrics:
-            selected_metrics.append(supported_metrics[m_name_lower])
+    for m_name in sorted(list(all_metric_names)):
+        if m_name in supported_metrics:
+            selected_metrics.append(supported_metrics[m_name])
         else:
             print(f"Warning: Metric '{m_name}' is not supported. Skipping.")
     return selected_metrics
@@ -87,7 +94,14 @@ def evaluate_response_quality(
         # Evaluate the response using the metrics
         results = evaluate(dataset=dataset, metrics=selected_metrics)
         # Convert the Result object to a dictionary of scores
-        return results.to_pandas().iloc[0].to_dict()
+        scores = results.to_pandas().iloc[0].to_dict()
+        
+        # Validation: Check for NaNs in required metrics
+        for metric in ["faithfulness", "answer_relevancy"]:
+            if pd.isna(scores.get(metric)):
+                print(f"Warning: Metric '{metric}' resulted in NaN. This often happens if the LLM cannot find evidence in the provided context.")
+        
+        return scores
     except Exception as e:
         return {"error": str(e)}
 
@@ -179,11 +193,27 @@ def evaluate_from_file(
     
     # Calculate Aggregate Metrics
     df = results.to_pandas()
+    
+    # Validation: Identify NaNs in baseline metrics
+    required = ["faithfulness", "answer_relevancy"]
+    # Ensure columns exist before checking
+    missing_cols = [c for c in required if c not in df.columns]
+    if missing_cols:
+        print(f"Error: Required columns {missing_cols} missing from evaluation results.")
+        valid_count = 0
+    else:
+        valid_mask = df[required].notna().all(axis=1)
+        valid_count = int(valid_mask.sum())
+    
+    if valid_count < len(df):
+        print(f"Warning: {len(df) - valid_count} samples had NaN values in required RAGAS metrics.")
+        
     # Remove metadata columns if they exist (usually 'user_input', 'response', etc. are kept)
     numeric_cols = df.select_dtypes(include=['number']).columns
     summary = {
         "mean_scores": df[numeric_cols].mean().to_dict(),
         "total_samples": len(df),
+        "valid_samples": valid_count,
         "detailed_results": df.to_dict(orient="records")
     }
     
@@ -219,6 +249,7 @@ if __name__ == "__main__":
             print("BATCH EVALUATION SUMMARY")
             print("="*50)
             print(f"Total Samples: {summary['total_samples']}")
+            print(f"Valid Samples (all baseline metrics present): {summary['valid_samples']}")
             print("\nMean Scores:")
             for metric, score in summary['mean_scores'].items():
                 print(f"  {metric}: {score:.4f}")
