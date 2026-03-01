@@ -71,12 +71,16 @@ def generate_response(openai_key, user_message: str, context: str,
     except Exception as e:
         return f"Error generating response: {e}"
 
-def evaluate_response_quality(question: str, answer: str, contexts: List[str]) -> Dict[str, float]:
-    """Evaluate response quality using RAGAS metrics"""
+def evaluate_response_quality(question: str, answer: str, contexts: List[str], selected_metrics: List[str]) -> Dict[str, float]:
+    """Evaluate response quality using selected RAGAS metrics"""
     try:
-        print("Evaluating response quality...") 
-        print(question, answer, contexts)
-        return ragas_evaluator.evaluate_response_quality(question, answer, contexts)
+        # Note: In live chat, we don't have ground truth, so some metrics might be limited
+        return ragas_evaluator.evaluate_response_quality(
+            question=question, 
+            answer=answer, 
+            contexts=contexts,
+            metrics_list=selected_metrics
+        )
     except Exception as e:
         return {"error": f"Evaluation failed: {str(e)}"}
 
@@ -184,6 +188,15 @@ def main():
         st.subheader("📊 Evaluation Settings")
         enable_evaluation = st.checkbox("Enable RAGAS Evaluation", value=RAGAS_AVAILABLE)
         
+        selected_metrics = []
+        if enable_evaluation:
+            selected_metrics = st.multiselect(
+                "Select Metrics",
+                options=["faithfulness", "answer_relevancy", "bleu", "rouge", "answer_correctness", "context_precision"],
+                default=["faithfulness", "answer_relevancy"],
+                help="Choose which RAGAS metrics to compute. Note: Some metrics perform better with ground truth."
+            )
+        
         # Initialize RAG system when backend changes
         if (st.session_state.current_backend != selected_backend_key):
             st.session_state.current_backend = selected_backend_key
@@ -252,7 +265,8 @@ def main():
                         evaluation_scores = evaluate_response_quality(
                             prompt, 
                             response, 
-                            contexts_list
+                            contexts_list,
+                            selected_metrics
                         )
                         st.session_state.last_evaluation = evaluation_scores
         

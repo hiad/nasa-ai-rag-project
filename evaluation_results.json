@@ -1,0 +1,318 @@
+{
+  "mean_scores": {
+    "faithfulness": 0.65,
+    "answer_relevancy": 0.8149669681449093,
+    "bleu_score": 0.151468555704392,
+    "rouge_score(mode=fmeasure)": 0.42707036841950563,
+    "answer_correctness": 0.7681500906842572
+  },
+  "total_samples": 18,
+  "detailed_results": [
+    {
+      "user_input": "What was the primary goal of the Apollo 11 mission according to the PAO launch commentary?",
+      "retrieved_contexts": [
+        "000-1) entitled \"Apollo Flight\nMission Assignments\" and prepared July 11, 1969) was to perform a manned lunar land-\ning and return safely to earth. In addition to the single primary objective, 11 sec-\nondary objectives were delineated from the following two general categories:\n1. To perform selenological inspection and sampling\n2. To obtain data to assess the capability and limitations of a man and his\nequipment in the lunar environment\nThe 11 secondary objectives are listed in table 14-I and ar",
+        "pollo 11.\nTower cleared.\n12\n\n--- PAGE 15 ---\n7-16-69\nAPOLLO 11 - MISSION COMMENTARY\nPAO\nNeil Armstrong reporting their roll and pitch program which puts Apollo 11 on a proper\nheading. Plus 30 seconds.\nSC\nRolls complete and a pitch is program. One BRAVO.\nPAO\nOne BRAVO is an abort control mode. Altitude is 2 miles.\nCAPCOM\nAll is well at Houston. You are good at 1 minute.\nPAO\nDown range 1 mile, altitude 3 - 4 miles now, velocity is 2,195 feet per second. We are through\nthe region of maximum dynamic",
+        "PAGE 180 ---\nAPOLLO 11 - MISSION COMMENTARY\n7-19-69\nCAPCOM\nApollo 11, this is Houston. Over.\nSC\nRoger, go ahead Houston, Apollo 11.\nCAPCOM\n11, this is Houston. You are GO for LOI. Over.\nSC\nRoger, GO for LOI.\nCAPCOM\nAnd we're showing about 10 minutes and 30 seconds to LOS. I would like to remind you to\nenable the BD roll on the auto RCS switches. Over.\nSC\nRoger, and confirm you want PG on low going over the hill. Over.\nCAPCOM\nThat's affirmative, 11.\nSC\nRoger.\nPAO\nThat was Buzz Aldrin confirming t",
+        "O\nThis is Apollo Control at 33 hours, 34 minutes. We've been advised that we are getting\ntelevision transmission from Goldstone at the present time. This is an unscheduled TV\ntransmission apparently of the crew checking out their onboard system.\nPAO\nWe have lost lock on the high gain antenna at this time. Apollo 11 is presently 127,991\nnautical miles from Earth, traveling at a speed of about 4400 feet per second. The regularly\n94\n\n--- PAGE 97 ---\n7-17-69\nAPOLLO 11 MISSION COMMENTARY\nscheduled ti",
+        "pollo Control, at 71 hours into the mission. Apollo 11 is 12,486 nautical miles from\nthe Moon. Approaching at a velocity of 4,087 feet per second. We will stand by here and see\nwhether we put in a call to the crew.\nPAO\nWe're putting a call into the crew now.\nCAPCOM\nApollo 11, Apollo 11, this is Houston, over.\nSC\nGood morning, again, Houston, over.\n164\n\n--- PAGE 167 ---\n7-19-69\nAPOLLO 11 - MISSION COMMENTARY\nCAPCOM\nRoger, 11, good morning. When you -\nSC\nWould you like the attitude purge this morn"
+      ],
+      "response": "The primary goal of the Apollo 11 mission, as reported in the PAO launch commentary, was to perform a manned lunar landing and return safely to Earth [Source 1].",
+      "reference": "The primary goal was to land two astronauts on the Moon.",
+      "faithfulness": NaN,
+      "answer_relevancy": 0.8599973956043926,
+      "bleu_score": 0.05542059607281022,
+      "rouge_score(mode=fmeasure)": 0.3,
+      "answer_correctness": NaN
+    },
+    {
+      "user_input": "Who were the three astronauts assigned to the Apollo 11 mission, and who was the first to enter the spacecraft?",
+      "retrieved_contexts": [
+        "rs. After checking out their suits they departed from the crew quarters\nat 6:27 a.m. and some 27 minutes later and 8 miles away from the crew quarters at the\nKennedy Space Center a top the launch pad at complex 39, 6:54 a.m. the commander,\nastronaut Neil Armstrong, was the first aboard the spacecraft. He was followed about 5\nminutes later by Mike Collins and finally Buzz Aldrin, the man who is sitting in the middle\nseat during liftoff, was the third astronaut to come aboard. Two minor problems h",
+        "he lunar surface and to\nreturn them safely to earth. The members of the crew were Neil A. Armstrong, Commander;\nMichael Collins, Command Module Pilot; and Edwin E. Aldrin, Jr., Lunar Module Pilot.\nThe space vehicle was launched from Kennedy Space Center, Florida, at 8:32:00 a.m.\ne.s.t., July 16, 1969. The activities during earth orbit checkout, translunar injection,\ntransposition and docking, spacecraft ejection, and translunar coast were similar to\nthose of the previous mission, a lunar orbit r",
+        " seconds.\ndesign.\n22-2\n\n--- PAGE 257 ---\nSECTION 23\nSPACECRAFT SUMMARY\nThe purpose of the Apollo 11 mission was to land men on the lunar surface\nand to return them safely. The crew was Neil A. Armstrong, Commander;\nMichael Collins, Command Module (CM) Pilot; and Edwin E. Aldrin, Jr.,\nLunar Module (LM) Pilot.\nThe space vehicle was launched from Kennedy Space Center (KSC), Florida,\nat 9:32:00 a.m. Eastern Daylight Time (EDT), July 16, 1969. The activi-\nties during earth orbit checkout, Translunar ",
+        "3-1, respectively.\nThe Apollo 11 space vehicle was launched on July 16, 1969, at 8:32 a.m. e.s.t., as\nplanned. The spacecraft and the S-IVB were inserted into a 100.7- by 99.2-mile earth\nparking orbit. After a 2-1/2-hour checkout period, the spacecraft/S-IVB combination was\ninjected into the translunar phase of the mission. Trajectory parameters after the\ntranslunar injection firing were nearly perfect, with the velocity within 1.6 ft/sec of\nthat planned. Only one of the four options for midcour",
+        "\nThe Apollo 11 mission was the 11th in a series of flights using Apollo flight hard-\nware and was the first lunar landing mission of the Apollo Program. It was also the fifth\nmanned flight of the command and service modules and the third manned flight of the lunar\nmodule. The purpose of the mission was to perform a manned lunar landing and to return\nthe men safely to earth. A history of the Apollo flights is presented in appendix A.\nBecause of the excellent performance of the entire spacecraft, "
+      ],
+      "response": "The three astronauts assigned to the Apollo 11 mission were Neil A. Armstrong (Commander), Michael Collins (Command Module Pilot), and Edwin E. Aldrin, Jr. (Lunar Module Pilot) [Source 2]. Neil Armstrong was the first astronaut to enter the spacecraft [Source 1].",
+      "reference": "The astronauts were Neil Armstrong (Commander), Mike Collins (Command Module Pilot), and Buzz Aldrin (Lunar Module Pilot). Neil Armstrong was the first to enter the spacecraft at 6:54 a.m.",
+      "faithfulness": NaN,
+      "answer_relevancy": 0.8043958881613572,
+      "bleu_score": 0.05876316399785489,
+      "rouge_score(mode=fmeasure)": 0.6666666666666666,
+      "answer_correctness": NaN
+    },
+    {
+      "user_input": "What safety measures were in place at the 320-foot level of the launch pad to assist the astronauts in case of an emergency during the countdown?",
+      "retrieved_contexts": [
+        "arm the pyrotechnics so that escape tower atop the astronauts, atop their\n8\n\n--- PAGE 11 ---\n7-16-69\nAPOLLO 11 - MISSION COMMENTARY\nspacecraft, could be used if a catastrophic condition was going to occur under them with the\nlaunch vehicle from this point on down in the countdown. We have the high speed elevator\nlocated at the 320 foot level in the event the astronauts have to get out in a hurry. This is a\nspecial precaution. One of the members of the support team for Apollo 11, Astronaut Bill\nP",
+        "This is a\nspecial precaution. One of the members of the support team for Apollo 11, Astronaut Bill\nPogue, is here in the firing room. He acts as Capsule Communication during the countdown.\nHis call sign is Stoney. He controls that elevator. He now has it locked at the 320 foot level.\nThese are special precautions for safety purposes during the final phase of the count. Now\ncoming up on the 49 minute in the countdown, this is Kennedy Launch Control.\n\u00bb\u00bb END OF TAPE <<<<\nCDT 7:46 - GET T-45:42 - 8/",
+        "feet away from the hatch. Once this is accomplished, we will arm the pyrotechnic\nsystems in the spacecraft so in the event of a possible catastrophic condition below them, the\nlaunch vehicle, while still on the pad, the astronauts could fire that escape rocket and separate\nfrom the rocket in difficulty. The close-out crew are about to depart at this time. That swing-\narm remains about 12 degrees away from the spacecraft hatch as mentioned 5 feet or so\nuntil the 5-minute mark in the count when it",
+        "he countdown at this time, the countdown aimed at landing 2\nastronauts on the Moon. At this time the spacecraft Test Conductor Skip Chauvin going\nthrough some checks with astronaut Mike Collins aboard the spacecraft. We're winding up\nthis important emergency detection system test that Neil Armstrong has been participating in.\nMeanwhile, at the 320 foot level the closeout crew now placing the boost protective cover\nover the hatch now that we have completed the cabin purge and have the proper cabi",
+        "way from the spacecraft hatch as mentioned 5 feet or so\nuntil the 5-minute mark in the count when it's fully retracted to it's fall-back position. The\nobvious reason here is in the event we do have to get the astronauts out in a hurry, the swing-\narm is in a stand-by position and could be moved rapidly back to the hatch - to the hatch\nlevel so the astronauts could depart in the event of an emergency. We're coming up on T\nminus 1 hour, 10 minutes, and 20 seconds. This is Kennedy Launch Control.\n\u00bb"
+      ],
+      "response": "At the 320-foot level of the launch pad during the Apollo 11 mission countdown, special precautions were taken for safety purposes. Astronaut Bill Pogue, also known as 'Stoney,' was present in the firing room and acted as Capsule Communication. He controlled the high-speed elevator at the 320-foot level, which could be used for the astronauts to evacuate quickly in case of an emergency [Source 2].",
+      "reference": "A high-speed elevator was located at the 320-foot level for emergency escape. It was controlled by Astronaut Bill Pogue (call sign 'Stoney') in the firing room.",
+      "faithfulness": NaN,
+      "answer_relevancy": 0.8027809946893645,
+      "bleu_score": 0.1541506497751075,
+      "rouge_score(mode=fmeasure)": 0.2916666666666667,
+      "answer_correctness": NaN
+    },
+    {
+      "user_input": "What were the specific call signs assigned to the Command Module and the Lunar Module once they separated in lunar orbit?",
+      "retrieved_contexts": [
+        "e on Apollo 11, of course, when it separates\nfrom the command module in lunar orbit, will have the call sign Eagle. The command\nmodule call sign, once the 2 vehicles separate, will be Columbia. Both Columbia and Eagle\nare GO at this time at 29 minutes 24 seconds and counting. This is Kennedy Launch Control.\nPAO\nThis is Apollo/Saturn Launch Control. We've just passed the 26 minute mark in the count, T\nminus 25 minutes 53 seconds and counting, still proceeding very satisfactorily. At this time\nSpa",
+        "mmand module sighting history during lunar stay.\n\n--- PAGE 66 ---\n92\n4000\n88\n3000\n84\n2000\n80\n1000\nRange\nRange, mi\n76\nRange rate, fl/sec\nRange\n0\nrate\n72\n-1000\n68\n-2000\n64\n-3000\n8\n-4000\n:40\n23:00\n:20\n:40\n:24:00\n122:21:40\n22:00\n:20\nTime, hr:min:sec\nFigure 5-15.- - Rendezvous-radar tracking of the command module while the lunar module\nwas on the lunar surface.\n54\n\n--- PAGE 67 ---\nAscent\nPreparations for ascent began after the end of the crew rest period at 121 hours.\nThe command module state vector ",
+        "rily. The Command Module Pilot reported\nthat the vhf ranging broke lock approximately 25 times following ascent insertion; how-\never, lock-on was reestablished each time, and navigation updates were successful. The\nlunar module reaction control propellant usage was nearly nominal.\n-\nRendezvous-radar tracking\nGround tracking\nOrbit of command and service\nmodules (60 mi)\n7\n8\n9\n6\n3\n5\n10\nSun\n1\n2\n4\nEarth\nEvent\nTime\n1 Lift-off\n124:22:00.8\n2 Lunar module insertion\n124:29:15.7\n3 Coelliptic sequence initi",
+        "the lunar module systems was satisfactory, and after a planned rest period, the Commander\nand Lunar Module Pilot entered the lunar module to prepare for descent.\nThe two spacecraft were undocked at approximately 100 hours g.e.t., followed by\nseparation of the command and service modules from the lunar module. Descent orbit in-\nsertion was performed at approximately 101-1/2 hours g.e.t., and powered descent to the\nlunar surface began approximately 1 hour later. Operation of the guidance and desce",
+        "he lunar surface and to\nreturn them safely to earth. The members of the crew were Neil A. Armstrong, Commander;\nMichael Collins, Command Module Pilot; and Edwin E. Aldrin, Jr., Lunar Module Pilot.\nThe space vehicle was launched from Kennedy Space Center, Florida, at 8:32:00 a.m.\ne.s.t., July 16, 1969. The activities during earth orbit checkout, translunar injection,\ntransposition and docking, spacecraft ejection, and translunar coast were similar to\nthose of the previous mission, a lunar orbit r"
+      ],
+      "response": "The call sign assigned to the Command Module once it separated in lunar orbit was \"Columbia,\" and the call sign assigned to the Lunar Module was \"Eagle\" [Source 1].",
+      "reference": "The Command Module's call sign was 'Columbia' and the Lunar Module's call sign was 'Eagle'.",
+      "faithfulness": NaN,
+      "answer_relevancy": 0.9290699291705531,
+      "bleu_score": 0.04410877697328769,
+      "rouge_score(mode=fmeasure)": 0.4782608695652174,
+      "answer_correctness": NaN
+    },
+    {
+      "user_input": "At what exact time did the Apollo 11 liftoff occur, and what was the status of the 'tower clearance' immediately after?",
+      "retrieved_contexts": [
+        " 11 liftoff. All the second stage tanks\nnow pressurized. 35 seconds and counting. We are still go with Apollo 11. 30 seconds and\ncounting. Astronauts reported, feels good. T-25 seconds. 20 seconds and counting. T-15\nseconds, guidiance is internal, 12, 11, 10, 9, ignition sequence starts, 6, 5, 4, 3, 2, 1, zero, all\nengines running, LIFTOFF. We have a liftoff, 32 minutes past the hour. Liftoff on Apollo 11.\nTower cleared.\n12\n\n--- PAGE 15 ---\n7-16-69\nAPOLLO 11 - MISSION COMMENTARY\nPAO\nNeil Armstro",
+        "pollo 11.\nTower cleared.\n12\n\n--- PAGE 15 ---\n7-16-69\nAPOLLO 11 - MISSION COMMENTARY\nPAO\nNeil Armstrong reporting their roll and pitch program which puts Apollo 11 on a proper\nheading. Plus 30 seconds.\nSC\nRolls complete and a pitch is program. One BRAVO.\nPAO\nOne BRAVO is an abort control mode. Altitude is 2 miles.\nCAPCOM\nAll is well at Houston. You are good at 1 minute.\nPAO\nDown range 1 mile, altitude 3 - 4 miles now, velocity is 2,195 feet per second. We are through\nthe region of maximum dynamic",
+        " countdown for\nApollo 11. Now 5 minutes, 52 seconds and counting. We're on time at the present time for\nour planned lift off of 32 minutes past the hour. Spacecraft test conductor, Skip Chauvin\nnow has completed the status check of his personnel in the control room. All report they are\nGO for the mission, and this has been reported to the test supervisor, Bill Schick. The test\nsupervisor now going through some status checks. Launch operations manager, Paul\n11\n\n--- PAGE 14 ---\nAPOLLO 11 - MISSION",
+        "Control. Flight Director, Cliff Charlesworth's team is on station here\nin the Mission Operations Control Room, ready to assume the control of this flight at tower\n9\n\n--- PAGE 12 ---\nAPOLLO 11 - MISSION COMMENTARY\n7-16-69\nclearance. There is a possibility that Apollo 11 will check out the command module color TV\ncamera during the first earth revolution while in contact with the Goldstone station. If this\ncheckout does occur, we acquire Goldstone at 1 hour, 29 minutes elapsed time. We have loss\nof",
+        "n\nRoom (PTCR). However, this delay time was recovered during the scheduled\nhold at -3 hours 30 minutes. Launch occurred at 09:32:00 Eastern Daylight\nTime (EDT), July 16, 1969, from Pad 39A of the Saturn Complex. Damage\nto the pad, Launch Umbilical Tower (LUT) and support equipment was minor.\n3.2 PRELAUNCH MILESTONES\nA chronological summary of events and preparations leading to the launch\nof AS-506 is contained in Table 3-1.\n3.3 COUNTDOWN EVENTS\nThe AS-506/Apollo 11 terminal countdown was picked "
+      ],
+      "response": "The Apollo 11 liftoff occurred at 32 minutes past the hour [Source 1], and immediately after liftoff, the status was reported as \"Tower cleared\" [Source 1].",
+      "reference": "Liftoff occurred at 9:32 a.m. (32 minutes past the hour). The tower was reported as 'cleared' immediately after ignition and liftoff.",
+      "faithfulness": NaN,
+      "answer_relevancy": 0.6963836911115654,
+      "bleu_score": 0.16895547485073312,
+      "rouge_score(mode=fmeasure)": 0.5306122448979592,
+      "answer_correctness": NaN
+    },
+    {
+      "user_input": "What was the purpose of the Lunar Module's descent engine during the final phase of the landing?",
+      "retrieved_contexts": [
+        "ered descent.\nLunar module descent.- The descent orbit insertion maneuver was executed at\n101.5 hours, and approximately 57 minutes later, the powered descent sequence began.\nThe detailed trajectory analysis for the lunar module descent phase is presented in\n\"Descent Trajectory Logic\" in section 5. The trajectory parameters and maneuver results\nare presented in tables 7-II and 7-V.\nLunar module ascent and rendezvous.- The lunar module ascent stage lifted off the\nlunar surface at 124:22:00.8 afte",
+        "d. These\nprograms provide an automatic guidance and control capability for the lunar module from\npowered descent initiation to landing. The braking phase program (P63) is initiated\napproximately 40 minutes before the descent engine ignition and controls the lunar module\nuntil the final approach phase program (P64) is automatically entered to provide proper\ntrajectory conditions and optimum landing-site visibility.\nIf desired, during a nominal descent, the crew may select the manual landing phase",
+        "ed descent are the braking phase (which terminates at an\naltitude of 7700 feet), the approach or visibility phase (to an altitude of approximately\n500 feet), and the final landing phase. Three separate computer programs, one for each\nphase, in the primary guidance system execute the desired trajectory such that the vari-\nous position, velocity, acceleration, and visibility constraints are satisfied. These\nprograms provide an automatic guidance and control capability for the lunar module from\npow",
+        "ion for Powered Descent\nFollowing the first sleep period in lunar orbit, the crew entered and began activa-\ntion of the lunar module. (See \"Descent Preparation\" in section 4.) A listing of the\nsignificant events for lunar module descent is presented in table 5-I.\nUndocking was accomplished on schedule just prior to acquisition of signal on lunar\nrevolution 13. After the lunar module inspection by the Command Module Pilot, a separa-\ntion maneuver was performed by the command and service modules; ",
+        " to the descent stage base\nheat shield to preclude the possibility of interference with the landing radar. Also,\ninsulation was added to the landing gear and the probes to accommodate the requirement\nfor descent engine firing until touchdown.\nCommunications systems changes.- The major modifications to the communications sys-\ntems included the addition of an extravehicular activity antenna to the lunar module for\nlunar communications between the crew and the lunar module and the addition of an S-"
+      ],
+      "response": "The purpose of the Lunar Module's descent engine during the final phase of the landing was to provide the necessary guidance and control capability to execute the desired trajectory and ensure that various position, velocity, acceleration, and visibility constraints were satisfied [Source 3].",
+      "reference": "The descent engine was used to slow the craft's descent for a soft landing on the lunar surface.",
+      "faithfulness": NaN,
+      "answer_relevancy": 0.9981912540824958,
+      "bleu_score": 0.02168776900007474,
+      "rouge_score(mode=fmeasure)": 0.22222222222222218,
+      "answer_correctness": NaN
+    },
+    {
+      "user_input": "What was the initial objective of the Apollo 13 mission before the emergency occurred, and which lunar region was the target?",
+      "retrieved_contexts": [
+        " an estimated start of\n2:30. Meanwhile in Mission Control, flight dynamics has\nupdated our SIVB impact coordinates in time. We are presently\nlooking at coordinates of 2 degree 18 minutes south, 28\ndegrees, 55 zero minutes west at a ground elapsed time of\n77 hours, 57 minutes, 5 seconds. Apollo 13 is now 164 814\nnautical miles away from Earth, traveling at a speed of\n3539 feet per second.\nCAP COM\nApollo 13, Houston.\nSC\nGo ahead Houston.\nCAP COM\nRoger - for Jack, we missed the star\nangle differenc",
+        "\nCoordinates of the impact location on the Moon, 2 degrees, 11\nminutes south, 28 degrees, 58 minutes west. News men in the\nnews center can see the impact point in relationship to landing\nzones on the monitors in the news center at this time. This is\nMission Control, Houston.\nEND OF TAPE\n\n--- PAGE 171 ---\nAPOLLO 13 MISSION COMMENTARY 4-13-70 CST 8:30A GET 43:17:00 121/1\nP AO\nThis is Apollo Control at 43 hours 17 minutes.\nThree briefings on future programs are scheduled for this\nmorning in the bri",
+        "have indicated they are on station and ready to\nsupport the launch of Apollo 13. The prime crew inside the\nspacecraft at this time, left the Manned Spacecraft Operations\nBuilding at Kennedy Space Center at 11:07 AM EST this morning\non their way out to the pad. They took the 8 mile trip in the\ntransfer van, went up to the white room level where spacecraft\ncommander Jim Lovell was the first one to board the spacecraft\nat 11:32 AM. He was followed by the lunar module pilot who\nmoved in, Fred Haise ",
+        "n hours\nremain in the crew's sleep period. Apollo 13 is 144 784 nautical\nmiles from earth, velocity 4019 feet per second. The latest\nS 4B impact time update places impact of the third stage of the\nbooster on the lunar surface at 77 hours, 57 minutes, 4 seconds.\nPredicted coordinates of impact 2 degrees, 10 minutes south,\n28 degrees, 50 minutes west. This is Mission Control, Houston.\nEND OF TAPE\n\n--- PAGE 168 ---\nAPOLLO 13 MISSION COMMENTARY 4-13-70 CST 5:14A GET 40:01 118/1\nPAO\nThis is Apollo Co",
+        " hours,\n20 minutes into the flight of Apollo 13. At present the\nApollo 13 spacecraft is 2461 nautical miles away from the moon\nand traveling a speed of 5343 feet per second. We show one\nhour and 7 minutes away from time of ignition of the descent\npropulsion system burn.\nCAP COM\nAquarius, Houston.\nSC\nGo ahead, Houston.\nCAP COM\nJim, request verify ranging functions\nswitches in ranging. We need that, if it's not there now.\nSC\nYou got it, Babe.\nCAP COM\nThank you.\n\n--- PAGE 417 ---\nAPOLLO 13 MISSION "
+      ],
+      "response": "The initial objective of the Apollo 13 mission was to land in the Fra Mauro region of the Moon [Source 3].",
+      "reference": "The initial objective was a lunar landing mission to explore the hilly Fra Mauro region of the Moon.",
+      "faithfulness": NaN,
+      "answer_relevancy": 0.7706578552330624,
+      "bleu_score": 0.2755396296659942,
+      "rouge_score(mode=fmeasure)": 0.6153846153846153,
+      "answer_correctness": NaN
+    },
+    {
+      "user_input": "How did the crew handle the carbon dioxide filtration problem in the Lunar Module when the Command Module's square canisters didn't fit?",
+      "retrieved_contexts": [
+        "me. That is being considered but\nno decision has been made. The carbon dioxide levels in\nthe Lunar Module were also discussed and a procedure was\npassed up to Haise for keeping tabs on the rising C02 level,\nand for changing to the backup lithium hydroxide canister\nwhen the level reaches 15 millimeters of mecury - partial\npressure. The surgeon also recommended that the onboard\nreading be used for this indication. It was felt that the\nonboard reading would be somewhat more accurate although we've\n",
+        "ssures in the command module. Isolating\nthe search tank leaves oxygen for entry if this should become\nnecessary. Also, if necessary, the 13 crew could open a\ntunnel and use oxygen from the lunar module.\nCAPCOM\nApollo 13, how do you read.\nCAP COM Okay, 13, this is HOuston. It appears that\nwe are losing 02 flow -\nEND OF TAPE\n\n--- PAGE 242 ---\nAPOLLO 13 MISSION COMMENTARY 4-13-70 CST 10:10P GET 56:57:00 175/1\nCAP COM Okay 13, this is Houston. It appears\nto us that you're loosing 02 flow through fue",
+        "failed shortly thereafter.\nA decision was made to scrub any attempt at landing and con-\ntinue on a lunar fly-by deep space abort type mission. The\nincreased load on fuel cell 2 and the dropping pressure in\nthe remaining liquid oxygen tank led to the decision to use\nthe lunar module for a sort of lifeboat to come back to\nearth using its consumables for life support. The remainder\nof the evening was spent in trying to get the power and water\nprofile pared down to get the most mileage out of these ",
+        "inutes to entry interface\n400 000 feet. 17 hours 56 minutes to next midcourse cor-\nrection, if it is indeed performed. Cabin pressure in the\nLunar Module holding at 4.94 pounds per square inch. Par-\ntial pressure of carbon dioxide in the cabin 1/10 of a\nmillimeter of mercury. And in the consumables for the Lunar\nModule, the remaining lifetime of various consumables, total\nusable remaining water 111.4 pounds. The present usage\nrate is 2-1/2 pounds an hour and the time remaining at this\npresent ra",
+        "what their procedure was being planned\nfor the oxygen purge systems, the emergency oxygen supply\ncarried with the backpack and lithium hydroxide canisters\navailable. On these, Lousma told him that we haven't reached\na conclusion on that. The meeting going on around the flight\ndirector's console at this time, is involved with that sort\nof thing. As well as what procedures to be followed as far\nas jettisoning the LM and service modules all of these things\nbeing considered and discussed. At the pre"
+      ],
+      "response": "A procedure was passed to Haise to keep tabs on rising CO2 levels in the Lunar Module and switch to the backup lithium hydroxide canister when the level reaches 15 millimeters of mercury - partial pressure. The surgeon recommended using the onboard reading for this indication, which was considered more accurate [Source 1].",
+      "reference": "The crew built a DIY adapter using plastic bags, cardboard, and tape (often called the 'mailbox') to use the square Command Module lithium hydroxide canisters in the Lunar Module's round sockets.",
+      "faithfulness": NaN,
+      "answer_relevancy": 0.638930162651465,
+      "bleu_score": 0.05707316594345163,
+      "rouge_score(mode=fmeasure)": 0.1904761904761905,
+      "answer_correctness": NaN
+    },
+    {
+      "user_input": "What specific electrical bus failure and oxygen tank pressure drops were reported by the crew following the 'Houston, we've had a problem' message?",
+      "retrieved_contexts": [
+        "hy at\nthis time. Back over the past 8 or 10 hours of the mission\nthe problem first cropped up at about 55 hours and 58 minutes\nground elapsed time last evening when the crew first reported\nan under voltage alarm on the command module main bus B. This\nwas their first hint that something was amiss, the pressure\nrapidly dropped in the service module liquid oxygen tank\nnumber 2 and fuel cells 1 and 3 failed shortly thereafter.\nA decision was made to scrub any attempt at landing and con-\ntinue on a l",
+        " observations\non main bus B. They tabbed us pretty fast there and we\nfirst heard the impact or explosion or whatever caused\nit. I'm not sure. The next about 1 second later there\nwas a master alarm which was the main bus B undervolt. I\nlooked at the voltage and the voltage was good at this time\nso I'm suspecting it was right. Fuel cell 3 was also good\nwith good flow. However, Fred, at that point, was coming\ninto the command module and got over into his seat. At that\ntime, we shortly had an ac bus",
+        "2 tank pressure on 1\nis less than 300 now.\nCAP COM Roger, we see that and confirm it.\n13, Houston, we are going to have to have you go through the\nshutdown procedure on fuel cell 1. Our 02 pressure is going\ndown as you note and the temperature confirms it. Copy?\nSC\nOkay. What bus configuration, what main\nbus do you want powered?\nCAP COM Okay, Jack, we want you to leave the\nbus configuration as it is. Fuel cell 2 on main A, and we\nneed OMNI BRAVO.\nSC\nOkay, Jack, we are proceeding on the\nshutdown ",
+        ", and\nwe first heard the impact or explosion or what-\never caused it, I'm not sure. The next - About\n1 second later, there was a MASTER ALARM which\nwas the MAIN BUS B UNDERVOLT. I looked at the\n\n--- PAGE 368 ---\nTape 54/15\nPage 361\nvoltage, and the voltage was good rt 'his time\nSO I'm suspecting it was a spike. Fuel cell 3\nwas also good, with good flow. However, Fred,\nat that point, was coming into the command\nmodule and got over into his seat. At that\ntime, we shortly had an AC BUS 2 light abou",
+        "Houston. We're going to have to have you go\nthrough the shutdown procedure on fuel cell 1.\nOur 0\u2082 pressure is going down as you note and the\ntemperature confirms it. Did you copy?\n02 09 15 24\nCMP\nOkay. Well, what bus configuration - What main\nbus do you want powered?\n02 09 15 36\nCC\nOkay, Jack. We want you to leave the bus con-\nfiguration as it is. Fuel cell 2 on MAIN A, and\nwe need OMNI Bravo.\n02 09 15 52\nCMP\nOkay, Jack. We're proceeding on the shutdown\nprocedure for fuel cell 1.\n02 09 16 35\nCC\n"
+      ],
+      "response": "The specific electrical bus failure reported by the crew following the 'Houston, we've had a problem' message was an undervoltage alarm on the main bus B [Source 1]. Additionally, the crew reported that the oxygen tank pressure on tank 1 was less than 300 [Source 3].",
+      "reference": "The crew reported a voltage drop on Main Bus B and a significant loss of pressure in Oxygen Tank 2, which eventually dropped to zero.",
+      "faithfulness": 0.5,
+      "answer_relevancy": 0.8236304221755185,
+      "bleu_score": 0.01950831556358955,
+      "rouge_score(mode=fmeasure)": 0.24999999999999994,
+      "answer_correctness": 0.4893171637005451
+    },
+    {
+      "user_input": "Which astronaut was replaced by Jack Swigert just days before the Apollo 13 launch due to exposure to German measles?",
+      "retrieved_contexts": [
+        "Astronaut Mattingly until a few days\nago was the command module pilot for the mission and due to\nexposure to measles was replaced by Jack Swigert. Mattingly\nhas been in the control center and is currently in the control\ncenter observing the progress of the mission. I have to\nrepeat that the press conference with Astronaut Mattingly is\nscheduled for 6 PM central standard time in the news center\nauditorium.\nSC\nOkay, Joe, we are not opening the waste\nstowage vent.\nCAP COM\nOkay, check, we copy.\nSC\nO",
+        "rsation between Jack Lousma and Fred Haise\nwas not Astronaut Charles Duke, but rather one Charlie Mars\nwho looks after the Lunar Modules at Cape Kennedy prior to\nlaunch. At this time the flight plan that we have on one\nof our display boards here in Mission Control shows that\nCommander Jim Lovell and Command Module Pilot Jack Swigert\nhave a little bit more than 3 hours remaining in their sleep\nperiod. The flight plan is relatively open. Also from\n87 hours to 88 hours, which would indicate that th",
+        "\nPAO\nThat was Jack Swigert indicating that\nthey plan to jettison the lunar module in about 3 minutes from\nthis time.\nPAO\nApollo Control Houston 141 hours 28 minutes\ninto the flight, Apollo 13 now 11 590 nautical miles away from\nearth. For reentry the 3 crewmen will be traveling in shirt\nsleeve nvironment, not in their space suits. We're standing\nby now for reports of jettison of the lunar module. At 141\nhours 28 minutes this is Apollo Control Houston.\nEND OF TAPE\n\n--- PAGE 905 ---\nAPOLLO 13 MISS",
+        "cess of\ncompleting a shift change. Flight director Milton Windler\nand his marooned team of flight controlers replacing flight\ndirector Gene Kranz and the white team. On board the spacecraft,\nthe flight plan calls for the, two of the crewmen, Commander\nJim Lovell and command module pilot Jack Swigert to begin a\n5-hour rest period shortly. All three crewmen are scheduled\n\n--- PAGE 459 ---\nAPOLLO 13 MISSION COMMENTARY 4-14-70 CST 11:38P GET 82:25:00 329/2\nPAO\nto be eating at this time or to have\nfi",
+        "ll is the only one of the 3 crewmen who\nis up and about. Jack Swigert has been resting since about\n82 hours elapsed time, and Fred Haise began his rest period at\n86 hours ground elapsed time. Lovell rested from about 82 hours\nuntil about 86 hours, now when he changed positions with Fred\nHaise taking over the watch. At the present time Apollo 13 is\n191 187 nautical miles from Earth, and traveling at a speed\nwith respect to Earth of 3804 feet per second. We expect to\ncontinue having quite a bit of"
+      ],
+      "response": "Astronaut Mattingly was replaced by Jack Swigert just days before the Apollo 13 launch due to exposure to German measles [Source 1].",
+      "reference": "Ken Mattingly was replaced by Jack Swigert as the Command Module Pilot.",
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.6313392589862044,
+      "bleu_score": 0.19940445989088906,
+      "rouge_score(mode=fmeasure)": 0.4117647058823529,
+      "answer_correctness": 0.47728680988106403
+    },
+    {
+      "user_input": "What was the purpose of the 'Main Bus Tie' switches used by the crew during the power-down sequence after the explosion?",
+      "retrieved_contexts": [
+        "he B US tie switches. We want to do this\nfor two reasons: first of all, we want it absolutely verified\nthat there are no loads on the main BUSES, that we've got\neverything off and that the BUSES look good, and the second\nthing we want to do is to power the BUS, the main BUSES with\nthe B US tie motor switches and then depower them by pulling\nthe circuit breakers, leaving the main BUS tie switches in the\n\n--- PAGE 550 ---\nAPOLLO 13 MISSION COMMENTARY 4-15-70 CST 11:05A GET 93:52:10 396/3\nCAPCOM ON",
+        " main bus tie that we switched\nOFF was BAT Alfa Charlie.\n04 15 12 15\nCMP\nThat's verified; MAIN BUS TIE, BAT Alfa Charlie,\nOFF. And that should\n...\n\n--- PAGE 564 ---\nTape 75/4\nPage 557\n04 15 12 22\nCC\nOkay. And in panel 3, I've got a switch for you.\nAC INVERTER 2 to MAIN B.\n04 15 12 39\nCMP\nOkay. AC INVERTER 2 to MAIN B.\n04 15 12 42\nCC\nOkay. And switch INVERTER 2, AC BUS 2 to on;\nand another switch, AC BUS 2 RESET, to reset\nand center; switch BATTERY CHARGE to Alfa;\nswitch DC INDICATOR select BAT C",
+        "ll, we want it absolutely verified that\n\n--- PAGE 457 ---\nTape 64/3\nPage 450\nthere are no loads on the main buses, that we've\ngot everything off and that the buses look good;\nand the second thing we want to do is to power\nthe bus - the main buses, with the BUS TIE motor\nswitches, and then depower them by pulling the\ncircuit breakers, leaving the MAIN BUS TIE switches\nin the on position, just to assure that they '11\nbe there when we need them, whether the batteries\nget cold or not. Over.\n03 22 01",
+        " observations\non main bus B. They tabbed us pretty fast there and we\nfirst heard the impact or explosion or whatever caused\nit. I'm not sure. The next about 1 second later there\nwas a master alarm which was the main bus B undervolt. I\nlooked at the voltage and the voltage was good at this time\nso I'm suspecting it was right. Fuel cell 3 was also good\nwith good flow. However, Fred, at that point, was coming\ninto the command module and got over into his seat. At that\ntime, we shortly had an ac bus",
+        "my rational for the main bus power up.\nSC\nYes, I did. Do you want a power up both\nbuss's with buss type motor switches first of all to see that\nthere are no loads on the buss's and second depower the Buss's\nby pulling the circuit breaker to insure that the motor switches\ndon't - so the Buss's stay on so they're there when we need them.\nCAP COM That's correct, Jack. Are you ready\nto copy the procedure?\nSC\nOkay. Go ahead.\nCAP COM Okay. As the first step, I have one\nchange to the basic configuratio"
+      ],
+      "response": "The purpose of the 'Main Bus Tie' switches used by the crew during the power-down sequence after the explosion was to power the main buses with the BUS TIE motor switches, and then depower them by pulling the circuit breakers, leaving the main BUS TIE switches in the on position to ensure they would be available when needed [Source 3].",
+      "reference": "The 'Main Bus Tie' switches were used to connect the entry batteries to the main electrical buses (Bus A and Bus B) to manage the limited power shared between the Command Module and Lunar Module.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.9700918113959287,
+      "bleu_score": 0.053787125429373805,
+      "rouge_score(mode=fmeasure)": 0.3125,
+      "answer_correctness": 0.6821124983010294
+    },
+    {
+      "user_input": "How many hours into the mission did the oxygen tank explosion occur on Apollo 13?",
+      "retrieved_contexts": [
+        "n hours\nremain in the crew's sleep period. Apollo 13 is 144 784 nautical\nmiles from earth, velocity 4019 feet per second. The latest\nS 4B impact time update places impact of the third stage of the\nbooster on the lunar surface at 77 hours, 57 minutes, 4 seconds.\nPredicted coordinates of impact 2 degrees, 10 minutes south,\n28 degrees, 50 minutes west. This is Mission Control, Houston.\nEND OF TAPE\n\n--- PAGE 168 ---\nAPOLLO 13 MISSION COMMENTARY 4-13-70 CST 5:14A GET 40:01 118/1\nPAO\nThis is Apollo Co",
+        "'re at 137 hours\n34 minutes into the flight, and this is Apollo Control,\nHouston. One correction. That burn duration is 23 seconds\nnot 21 seconds. We're at 137 hours 35 minutes into the\nFlight. We show Apollo 13 at 38 303 nautical miles away from\nEarth, and with a velocity of 10 045 feet per second. Less\nthan 5 minutes now away from scheduled time of ignition.\nEND OF TAPE\n\n--- PAGE 870 ---\nAPOLLO 13 MISSION COMMENTARY 4-17-70 CST 6:48A GET 137:35:00 599/1\nPAO\n- the flight, we show Apollo 13 at\n3",
+        "is 2 hours, 35 minutes, 27 seconds - the Flight\nDynamics Officer is in the process now of updating that time but\nwe don't expect a significant change. At 1 hours, 57 minutes,\n55 seconds, this is Mission Control Houston.\nEND OF TAPE\n\n--- PAGE 33 ---\nAPOLLO 13 MISSION COMMENTARY, 4/11/70, 3:11 PM\n26/1\nPAO\nThis is Apollo Control at 2 hours and 25 minutes.\nApollo 13 is now about 10 minutes away from the scheduled\nignition of the S-IVB engine to start the spacecraft on its\nway to the moon. The Flight",
+        "apsed time of 30 hours 40 minutes 57 seconds for\nMCC 2, with a DELTA-V or a velocity of 23 feet per second.\nThis, of course, will be performed with the service propulsion\nsystem of the command module and with a burn duration now\nplanned of 3.25 seconds. Of course, these numbers will be\nreviewed and updated as the mission progresses. We're now\nat 17 hours 25 minutes into the flight of Apollo 13 and this\nis Apollo Control, Houston.\nEND OF TAPE\n\n--- PAGE 86 ---\nAPOLLO ]3 MISSION COMMENTARY, 4-12-70",
+        "conds from time of\nentry interface and predicted time of splash, 13 minutes\n44 seconds from time of entry interface. We're now at 141 hours\n54 minutes into the mission continuing to monitor. This is\nApollo Control, Houston.\nPAO\nApollo Control, Houston at 141 hours\n55 minutes into the flight of Apollo 13. At the present, we're\nnow feeding a downrange picture of the recovery on the closed-\ncircuit television circuit. Further report from recovery: all\nrecovery aircraft, the C-130's, are airborne an"
+      ],
+      "response": "The oxygen tank explosion on Apollo 13 occurred approximately 56 hours into the mission [Source 5].",
+      "reference": "The explosion occurred approximately 56 hours into the mission.",
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.8264039297166218,
+      "bleu_score": 0.3370129264673147,
+      "rouge_score(mode=fmeasure)": 0.72,
+      "answer_correctness": 0.9316445755808491
+    },
+    {
+      "user_input": "What was unique about mission STS-51L in terms of its crew composition and NASA's spaceflight participation program?",
+      "retrieved_contexts": [
+        "t mission specialist along with Ron McNair and payload specialist Greg Jarvis all members of the uh 51 L crew\n\n[24:57] spk_2: And we're going to give it another shot today\n\n[25:01] spk_2: There they are\n\n[25:03] spk_2: The crew of Mission 51L\n\n[25:06] spk_2: Including teacher and space participant and the first private citizen to fly in space Krista McAuliffe\n\n[25:13] spk_2: The 10 member I crew and 6 member uh debris and red crew team has uh cleared the roadblocks set up to prevent people from ",
+        " many other aircraft\n\n[65:28] spk_1: Like other astronauts\n\n[65:31] spk_1: He has been frequently assigned to the many technical areas which are essential to successful flights and help carry information they are learning back to the flight crews His first flight was aboard STS 51C mission which was a dedicated Department of Defense payload\n\n[65:51] spk_1: Mission specialist Judy Resnick also putting on her egress harness now She was a mission specialist on the STS 41B which deployed 3 satellite",
+        " crew has entered the crew module to make sure that the ship is ready for the flight crew's arrival and entry in about 1 hour and 50 minutes\n\n[40:30] spk_0: NASA test director Frank Molino called the astronaut crew quarters with a go for crew wake up a little while ago and that event signified the last team's confidence that we are able to proceed on to liftoff\n\n[40:42] spk_0: The countdown for the launch of Mission 51L picked up at 100 a.m. on Thursday and since that time the KFC shuttle launch",
+        "e launch of Mission 51L picked up at 100 a.m. on Thursday and since that time the KFC shuttle launch team has been activating vehicle systems and preparing ground launch facilities for this 25th launch in the shuttle program This will be the 10th flight of the Orbiter Challenger\n\n[40:59] spk_0: At T minus 3 hours and holding this is shuttle launch control\n\n[41:05] spk_0: This is shuttle launch control The 51 hour flight crew will receive a final weather briefing by a satellite in their crew quar",
+        "CHALLENGER STS-51L MISSION AUDIO TRANSCRIPT\nAudio File: 107-AAG_STS-51L_Mission_Audio\nTranscription Date: 2025-07-13T12:33:40.358878\n================================================================================\n\nSPEAKER-SEGMENTED TRANSCRIPT:\n----------------------------------------\n\n[28:09] spk_0: Good morning This is shuttle launch control at T minus 3 hours and holding We're about 4.5 hours away from the opening of today's launch window for Mission 51L with America's first private citizen t"
+      ],
+      "response": "Mission STS-51L was unique in that it included the first private citizen to fly in space, Krista McAuliffe, who was a teacher and space participant [Source 1]. This mission marked the first time a private citizen was included in NASA's spaceflight participation program.",
+      "reference": "It featured the first private citizen to fly in NASA's spaceflight participation program, which President Reagan determined would be a school teacher, Krista McAuliffe.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.8579758336812368,
+      "bleu_score": 0.23977362037775204,
+      "rouge_score(mode=fmeasure)": 0.3714285714285714,
+      "answer_correctness": 0.9569866523305932
+    },
+    {
+      "user_input": "Can you list all seven crew members of the Challenger STS-51L mission as stated in the launch transcripts?",
+      "retrieved_contexts": [
+        "ort\n\n[158:18] spk_4: That based on very preliminary searches of the ocean where the Challenger impacted this morning\n\n[158:25] spk_4: These searches have not revealed any evidence that the crew of Challenger survived\n\n[158:32] spk_4: The dedicated crew members of Challenger\n\n[158:35] spk_4: Our commander Francis Dick Scobie\n\n[158:40] spk_4: Pilot Michael J Smith\n\n[158:43] spk_4: Mission specialist Doctor Judy Resnick\n\n[158:48] spk_4: Ellison Onazuka and Doctor Ronald McNair\n\n[158:53] spk_4: And ",
+        "ou normally employ\n\n[91:43] spk_0: Thank you very much\n\n[111:36] spk_2: Mr President\n\n[111:38] spk_2: Mrs Reagan\n\n[111:40] spk_2: Families of the Challenger crew other members of the NASA family\n\n[111:45] spk_2: Ladies and gentlemen thank you for coming here today to honor 7 brave Americans the crew of the spaceship Challenger\n\n[111:55] spk_2: Dick Scobie Mike Smith Judy Resnick Ron McNair E Onazuka Greg Jarvis and Kristen McAuliffe were explorers who blazed the trail for the rest of us Their co",
+        "CHALLENGER STS-51L MISSION AUDIO TRANSCRIPT\nAudio File: 107-AAG_STS-51L_Mission_Audio\nTranscription Date: 2025-07-13T12:33:40.358878\n================================================================================\n\nSPEAKER-SEGMENTED TRANSCRIPT:\n----------------------------------------\n\n[28:09] spk_0: Good morning This is shuttle launch control at T minus 3 hours and holding We're about 4.5 hours away from the opening of today's launch window for Mission 51L with America's first private citizen t",
+        "CHALLENGER STS-51L MISSION AUDIO TRANSCRIPT\nAudio File: 108-AAG_STS-51L_Mission_Audio\nTranscription Date: 2025-07-13T06:39:03.513414\n================================================================================\n\nSPEAKER-SEGMENTED TRANSCRIPT:\n----------------------------------------\n\n[00:33] spk_0: This is shuttle launch control at T minus 9 minutes and holding\n\n[00:38] spk_0: The scene in the firing room is similar in some ways to the when television was first introduced people huddling aroun",
+        "t crew\n\n[27:12] spk_2: There are 7 people in that closeout crew today including a pad leader an astronaut a technician a NASA quality control person and 2 mechanical technicians inside the crew module The astronaut support person will don some headgear and verify that the communications between the orbiter and the firing room are working properly The crew seats will also be inspected and prepared for the astronauts and items that are not required for flight or closeout will be removed\n\n[27:40] s"
+      ],
+      "response": "The seven crew members of the Challenger STS-51L mission as stated in the launch transcripts are:\n1. Commander Francis Dick Scobie [Source 1]\n2. Pilot Michael J Smith [Source 1]\n3. Mission specialist Doctor Judy Resnick [Source 1]\n4. Ellison Onazuka [Source 1]\n5. Doctor Ronald McNair [Source 1]\n6. Greg Jarvis [Source 2]\n7. Kristen McAuliffe [Source 2]",
+      "reference": "The crew consisted of Francis 'Dick' Scobee (Commander), Michael Smith (Pilot), Judith Resnik, Ellison Onizuka, Ronald McNair, Gregory Jarvis, and Krista McAuliffe.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.8228983086397459,
+      "bleu_score": 0.012284007838100375,
+      "rouge_score(mode=fmeasure)": 0.29268292682926833,
+      "answer_correctness": 0.889311983797223
+    },
+    {
+      "user_input": "What were the recorded temperatures at the launch pad and wind conditions at the Kennedy Space Center on the morning of January 28, 1986?",
+      "retrieved_contexts": [
+        "ne what the visibility is here in the case of a return to launch site aboard However with the sun coming up the skies are looking very good here at the Kennedy Space Center Actually weather around the world is quite good for this morning's launch with the exception of some winds at about the\n\n[52:36] spk_1: 12,000 ft level here at the Kennedy Space Center which place loads on the orbiter which are out of tolerance\n\n[52:47] spk_1: The launch team has been taking a look at those constraints throug",
+        "ave started between the crew and the firing room and checks with Mission Control over the air to ground loops are also underway These checks verify that all the primary and backup communication channels are functional between the crew ground facilities and mission control in Houston\n\n[67:30] spk_0: The weather officer has indicated a warming trend is taking place and that by 10 o'clock that it could reach 32 degrees here at the Kennedy Space Center Uh that's rather unusual uh\n\n[67:48] spk_0: For",
+        "urrently uh shows that we have scattered clouds at 25,000 ft and winds that are 12 knots out of the northwest and uh the temperature at the launch pad right now is 24 degrees\n\n[20:02] spk_2: Landing for 51L is now scheduled for Tuesday February 4th at Kennedy Space Center at the uh launch director has just given a go for the crew members to be awoken\n\n[20:14] spk_2: 51 our crew members are Commander Francis Dick Scobie pilot Michael Smith Mission specialist Judy Resnick Ellison Onizuka and Ronal",
+        "r a team of engineers representing both contractors and NASA have been taking a look at the ice build up that occurred on the structures at the launch pad during the night\n\n[95:01] spk_0: To determine that there was no problem in getting this launch off this morning\n\n[95:08] spk_0: The launch team is being updated by the Air Force weather people and it appears that the weather is going to cooperate The wind has been shifting around a little bit from the northwest to the west However the velociti",
+        "iod is extended The weather people are talking about the launch of another Ray Winsund balloon\n\n[91:47] spk_0: which probably would take place about 11 o'clock if we continue to hold here This would continue to give us upper level wind data to ensure that the conditions here at the Kennedy Space Center are satisfactory for launch or a return to launch site board in the unlikely event that that became necessary\n\n[92:08] spk_0: The weather here at the Kennedy Space Center is still forecast to be 2"
+      ],
+      "response": "The temperature at the launch pad on the morning of January 28, 1986, was 24 degrees Fahrenheit, with winds blowing at 12 knots out of the northwest at an altitude of 25,000 ft. [Source 3]",
+      "reference": "The temperature at the launch pad was recorded as 24 degrees, with northwest winds at 12 knots gusting to 20 knots.",
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.8761492813253525,
+      "bleu_score": 0.19770724632573594,
+      "rouge_score(mode=fmeasure)": 0.49122807017543857,
+      "answer_correctness": 0.6378970479432069
+    },
+    {
+      "user_input": "Why did the Challenger crew throttle down the main engines to 65% approximately 35 seconds into the flight?",
+      "retrieved_contexts": [
+        " engine start 4321\n\n[145:33] spk_0: And lift off lift off of the 25th space shuttle mission and it has cleared the tower\n\n[145:40] spk_5: Houston now controlling\n\n[145:43] spk_5: Roger\n\n[145:47] spk_5: Good role program confirmed\n\n[145:50] spk_5: Challenger now heading down range\n\n[145:54] spk_5: Engines beginning throttling down now at 94% Normal throttles uh for most of the flight 104%\n\n[146:03] spk_5: We'll throttle down to 65% shortly\n\n[146:09] spk_5: Engines at 65% 3 engines running normall",
+        " spk_5: We'll throttle down to 65% shortly\n\n[146:09] spk_5: Engines at 65% 3 engines running normally 3 good fuel cells 3 good APUs\n\n[146:17] spk_5: Velocity 2,257 ft per second Altitude 4.3 nautical miles Down range distance 3 nautical miles\n\n[146:26] spk_5: Engines throttling up 3 engines now at 104% Challenger go with throttle\n\n[146:30] spk_3: up\n\n[146:36] spk_5: 1 minute 15 seconds Velocity 2900 ft per second Altitude 9 nautical miles downrange distance 7 nautical miles\n\n[146:44] spk_5: Flig",
+        " spk_0: About 35 seconds into the flight the crew throttles down the main engines on the orbiter to 65% This is to reduce the amount of stress on the orbiter as it goes through the region called Max Q which is the time in which there's the greatest amount of turbulence\n\n[162:10] spk_0: Uh on the orbiter then the the throttles are pushed back up to 104% about 52 seconds into the flight\n\n[162:22] spk_0: Just 2 minutes and 7 seconds after lift off the solid rocket boosters separate\n\n[162:30] spk_0:",
+        "appens with the shuttle compared with other launch vehicles which are generally\n\n[161:24] spk_0: Around in the past and therefore the role cannot be seen as well The other thing that it does is it positions the orbiter so that as it is flying up into orbit it is upside down This is important to keep the pressure on the bottom side of the wings which is the way that the wings are stressed\n\n[161:46] spk_0: About 35 seconds into the flight the crew throttles down the main engines on the orbiter to ",
+        " 9 minute mark helium tanks in the orbiter's main propulsion system have been pressurized to their flight levels and gyro assemblies in the twin solid rocket boosters used to determine rates of motion during ascent activated\n\n[68:09] spk_2: Let's see would\n\n[68:09] spk_2: you repeat\n\n[68:11] spk_2: see this H5D we're getting a hydraulic emergency shutdown caused by a\n\n[68:17] spk_2: flight controls interrupts\n\n[68:18] spk_1: Up in the room payload specialist Krista McAuliffe was selected out of "
+      ],
+      "response": "The Challenger crew throttled down the main engines to 65% approximately 35 seconds into the flight to reduce the amount of stress on the orbiter as it went through the region called Max Q, which is the time with the greatest amount of turbulence [Source 3].",
+      "reference": "The engines were throttled down to reduce stress on the orbiter while passing through 'Max Q', the region of maximum dynamic pressure and turbulence.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.7202582946284917,
+      "bleu_score": 0.0763683077932073,
+      "rouge_score(mode=fmeasure)": 0.4285714285714286,
+      "answer_correctness": 0.9449959502154671
+    },
+    {
+      "user_input": "What were the specific concerns regarding ice formation on the launch pad structure as noted in the launch commentary?",
+      "retrieved_contexts": [
+        "r a team of engineers representing both contractors and NASA have been taking a look at the ice build up that occurred on the structures at the launch pad during the night\n\n[95:01] spk_0: To determine that there was no problem in getting this launch off this morning\n\n[95:08] spk_0: The launch team is being updated by the Air Force weather people and it appears that the weather is going to cooperate The wind has been shifting around a little bit from the northwest to the west However the velociti",
+        "or a delay in the launch\n\n[19:21] spk_1: Did you receive such a call\n\n[19:22] spk_1: and if so why was it not acted on\n\n[19:25] spk_4: Let me defer that question to Jessie Moore and to Dick Smith who were both here at the launch pad at that time\n\n[19:32] spk_0: There were a series of technical meetings yesterday morning uh about the uh ice on the launch pad The ICE team went out did an inspection uh early in the morning very early in the morning and then came back and reported and uh the technic",
+        "ons to become more satisfactory\n\n[78:24] spk_0: The ice inspection team which was out on the pad during the T minus 3 hour hold is just reporting back to the launch director Gene Thomas reporting that they believe that the conditions on the external tank and other parts of the orbiter will be acceptable for launch There is a bit more ice in frost than we normally see It's about 1/3 of the allowable amount at the present time\n\n[78:51] spk_0: And there's not expected to be significant build up bet",
+        "icant buildup could pose a potential hazard by breaking off at lift off and damaging the shuttle's heat protection tiles A special crew that was sent in to check on ice formation in water located in troughs uh just under the solid rocket boosters on the mobile launch platform\n\n[34:50] spk_2: Uh have reported back that uh those bags are not frozen solid and in fact they are just filled with a little bit of flush which is not a constraint for launch The water is located in those troughs to absorb ",
+        "uh early in the morning very early in the morning and then came back and reported and uh the technical team did sit down all the NASA people involved as well as the contract people involved and did uh feel that the conditions at the launchpad were acceptable for launch\n\n[20:01] spk_0: And basically recommended that you know we launch in addition to that there was a uh a follow up uh activity that was initiated yesterday prior to launch very close to launch and that is we send the ice team out ab"
+      ],
+      "response": "The specific concerns regarding ice formation on the launch pad structure included the potential hazard of ice breaking off at liftoff and damaging the shuttle's heat protection tiles [Source 4].",
+      "reference": "The concern was that any significant ice or frost buildup could pose a potential hazard by breaking off at liftoff and damaging the shuttle's heat protection system.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.9390279378310793,
+      "bleu_score": 0.30411168310881004,
+      "rouge_score(mode=fmeasure)": 0.5423728813559322,
+      "answer_correctness": 0.949476658357379
+    },
+    {
+      "user_input": "When did the management decide to postpone the launch for 24 hours during the final weather review?",
+      "retrieved_contexts": [
+        "cceptable weather conditions in the area at the originally planned launch time of 9:36 a.m. Saturday In a final weather review attended by program managers Saturday night at 10 p.m. the management decided to postpone the launch attempt for 24 hours\n\n[21:00] spk_2: The rotating service structure was put back into place around the vehicle to provide weather protection during inclement weather and the count resumed at 8:17 p.m. Sunday with the rotating service structure moved away from the vehicle ",
+        "tions in the area at the originally planned launch time of 9:36 a.m. Saturday\n\n[29:44] spk_0: In a final weather review attended by program managers Saturday night at 10 p.m. the management decided to postpone the launch attempt for 24 hours\n\n[29:54] spk_0: The rotating service structure was put back into place around the vehicle to provide weather protection during the inclement weather The count resumed at 8:17 p.m. Sunday and the rotating service structure was moved away from the vehicle at a",
+        "ts Winds aren't expected to change throughout the morning and launch managers are taking a closer look at that A contingency plan has been put into effect\n\n[46:32] spk_0: Where the weather station would release a weather balloon at 30 to check the wind velocities below 20,000 ft Currently the wind velocities are exceeding the limits for the wind load factor on the vehicle of some concern to launch managers Once again we are awaiting word that the crew will be\n\n[46:58] spk_0: Ready to depart the ",
+        "whether we would try for tomorrow morning\n\n[01:49] spk_0: And there would be a uh management uh meeting held following any scrub to take a look at all of the various aspects prior to rescheduling The countdown at T minus 9 minutes and holding this is shuttle launch control\n\n[02:06] spk_0: This is shuttle launch control at T minus 9 minutes and holding uh continuing to stand by here in the launch control center and the Mission Control Center in Houston uh for a decision on the winds uh\n\n[02:21] s",
+        " whether we would try for tomorrow morning\n\n[217:15] spk_0: And there would be a management meeting held following any scrub to take a look at all of the various aspects prior to rescheduling The countdown at T minus 9 minutes and holding this is shuttle launch control\n\n[217:32] spk_0: This is shuttle launch control at T minus 9 minutes and holding continuing to stand by here in the launch control center and the Mission Control center in Houston for a decision on the winds\n\n[217:47] spk_0: We ha"
+      ],
+      "response": "The management decided to postpone the launch attempt for 24 hours during the final weather review on Saturday night at 10 p.m. [Source 1] [Source 2]",
+      "reference": "The decision to postpone the launch for 24 hours was made Saturday night at 10 p.m. following a final weather review.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.7012231775239307,
+      "bleu_score": 0.4507770836049692,
+      "rouge_score(mode=fmeasure)": 0.5714285714285714,
+      "answer_correctness": 0.7224715667352145
+    }
+  ]
+}

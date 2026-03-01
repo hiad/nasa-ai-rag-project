@@ -106,15 +106,18 @@ This project follows a structured learning approach where each file contains TOD
 #### 4. **RAGAS Evaluator (`ragas_evaluator.py`)** - *Estimated Time: 2-3 hours*
 **What you'll learn:**
 - Response quality evaluation metrics
+- **RAGAS Evaluator**: Implemented batch evaluation logic in `ragas_evaluator.py` that computes aggregate metrics (Faithfulness, Correctness, BLEU, ROUGE) across a 18-question test set. The system uses a retrieval depth of `n_results=5` to ensure high context coverage and is grounded in actual mission transcripts.
 - RAGAS framework integration
-- Multi-dimensional assessment (relevancy, faithfulness, precision)
-- Evaluation data structure management
+- Multi-dimensional assessment (relevancy, faithfulness, precision, BLEU, ROUGE)
+- Batch evaluation and aggregate metrics calculation (mean scores)
+- Using `test_questions.json` for end-to-end pipeline validation
 
 **Key TODOs:**
 - Create evaluator LLM and embeddings
 - Define evaluation metrics instances
-- Evaluate responses using multiple metrics
-- Return comprehensive evaluation results
+- Implement dynamic metric selection
+- Implement batch evaluation from file (`test_questions.json`)
+- Summarize results with aggregate (mean) scores
 
 #### 5. **Chat Application (`chat.py`)** - *Estimated Time: 4-5 hours*
 **What you'll learn:**
@@ -248,9 +251,47 @@ data/
 - **Problem**: Out of memory during processing
 - **Solution**: Reduce batch sizes and chunk sizes
 
-### **Evaluation Errors**
-- **Problem**: RAGAS evaluation fails
-- **Solution**: Ensure all dependencies are installed and contexts are properly formatted
+## 📊 Evaluation System
+
+The project includes a robust evaluation system powered by the [RAGAS](https://docs.ragas.io/) framework.
+
+### **Metrics Supported**
+- **Faithfulness**: Measures if the answer is derived solely from the retrieved context.
+- **Answer Relevancy**: Measures how relevant the answer is to the question.
+- **BLEU Score**: Measures n-gram overlap with the reference answer.
+- **ROUGE Score**: Measures recall compared to the reference answer.
+- **Answer Correctness**: Measures semantic and factual accuracy against ground truth.
+- **Context Precision**: Measures the quality of the retrieval system.
+
+### **Evaluation Dataset (`test_questions.json`)**
+The system includes a dedicated evaluation dataset with at least 18 questions (6 per mission) covering the following categories:
+- **Overview**: Mission goals and mission purpose.
+- **Emergency**: Safety measures and procedural responses to crises.
+- **Disaster Analysis**: Technical post-mortems and failure investigations.
+- **Crew**: Personnel roles, assignments, and astronaut biographies.
+- **Technical**: Engineering specs, call signs, and mechanical details.
+- **Timeline**: Chronology of events, launch times, and mission milestones.
+
+### **Running Evaluations**
+
+#### **1. Batch Evaluation**
+Run end-to-end evaluation on the entire test set with aggregate reporting:
+```bash
+python3 ragas_evaluator.py --test-set test_questions.json --metrics faithfulness bleu rouge answer_correctness
+```
+This will:
+1. Load questions from `test_questions.json`.
+2. Retrieve context and generate answers using the current RAG pipeline.
+3. Compute all requested metrics and display **mean aggregate scores**.
+4. Save per-question results to `evaluation_results.json`.
+
+#### **2. Single Question Evaluation**
+```bash
+python3 ragas_evaluator.py --question "..." --answer "..." --contexts "..." --ground_truth "..." --metrics bleu rouge
+```
+
+#### **3. Live Chat Evaluation**
+The Streamlit app allows real-time metric selection in the sidebar. Simply toggle the desired metrics under "Evaluation Settings".
 
 ## 📈 Success Metrics
 
